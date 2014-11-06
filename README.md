@@ -1,3 +1,3 @@
-# [http://oscar.pm](oscar.pm)
+# [oscar.pm](http://oscar.pm)
 
 A snazzy website.
