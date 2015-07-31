@@ -1,0 +1,329 @@
+/* Reset
+   ========================================
+   A stylesheet reset heavily based
+   upon normalize.css. MIT Licensed.
+   ======================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+/* HTML5
+   ======================================== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Content
+   ======================================== */
+
+blockquote p::after,
+blockquote p::before,
+li::before,
+q::after,
+q::before {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+blockquote p:first-child,
+blockquote p:only-child {
+  text-indent: -1em;
+}
+
+blockquote p:last-child::after,
+blockquote p:only-child::after,
+q::after {
+  content: "\201D";
+}
+
+blockquote p:first-child::before,
+blockquote p:only-child::before,
+q::before {
+  content: "\201C";
+}
+
+blockquote p:first-child::before,
+blockquote p:only-child::before {
+  width: 1em;
+  display: inline-block;
+  text-align: right;
+}
+
+dt {
+  font-weight: bold;
+}
+
+hr {
+  height: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+}
+
+li {
+  position: relative;
+  counter-increment: num;
+}
+
+li::before {
+  width: 4em;
+  display: block;
+  text-align: right;
+  position: absolute;
+  left: -4.5em;
+}
+
+ol,
+ul {
+  counter-reset: num;
+}
+
+ol li::before {
+  content: counter(num, decimal) ".";
+}
+
+ol.code li::before {
+  content: counter(num, decimal-leading-zero) ".";
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  padding: 0 0 0 1.5em;
+}
+
+pre {
+  overflow: auto;
+  whitespace: pre-wrap;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+ul li::before {
+  content: "\2022";
+}
+
+/* Text-level
+   ======================================== */
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+mark {
+  background: #ffb;
+  color: #754;
+}
+
+q q::after {
+  content: "\2019";
+}
+
+q q::before {
+  content: "\2018";
+}
+
+small,
+sub,
+sup {
+  font-size: smaller;
+}
+
+sub,
+sup {
+  line-height: 1;
+}
+
+sup {
+  text-align: top;
+}
+
+sub {
+  text-align: bottom;
+}
+
+/* Forms
+   ======================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ======================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}

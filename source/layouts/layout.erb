@@ -1,0 +1,27 @@
+<%
+  @resource = current_resource.data
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/" />
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="initial-scale=1" />
+
+  <title><% unless @resource.title.nil? %><%= @resource.title %> &ndash; <% end %>Oscar Palm&eacute;r</title>
+  <meta name="description" content="A website for a developer who's a bit all over the place." />
+  <meta name="author" content="Oscar Palm&eacute;r" />
+
+  <%= stylesheet_link_tag "style" %>
+
+  <script src="//use.typekit.net/tdj5poq.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <main>
+    <%= yield %>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*
+ *= require reset
+ */
+
+body {
+  max-width: 24em;
+  margin: 8%;
+  background: #fafafa;
+  color: #5a5f50;
+  font-family: franklin-gothic-urw, helvetica neue, helvetica, arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(78, 96, 186);
+  border-bottom: .1em solid rgba(78, 96, 186, .9);
+  transition: .2s ease;
+  &:hover {
+    color: rgb(78, 186, 96);
+    border-color: rgba(78, 186, 96, .7);
+  }
+}
+
+i {
+  color: #aaa;
+}
+
+p {
+  margin: 0 0 1em;
+}

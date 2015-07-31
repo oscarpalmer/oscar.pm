@@ -1,0 +1,6 @@
+/.bundle
+/.sass-cache
+/build
+.DS_Store
+Gemfile.lock
+config.yml
