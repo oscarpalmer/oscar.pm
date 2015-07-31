@@ -5,6 +5,7 @@ activate :gzip
 
 activate :deploy do |deploy|
   deploy.clean  = config["clean"]
+  deploy.flags  = config["flags"]
   deploy.host   = config["host"]
   deploy.method = :rsync
   deploy.path   = config["path"]
