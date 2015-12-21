@@ -4,13 +4,13 @@ activate :directory_indexes
 activate :gzip
 
 activate :deploy do |deploy|
-  deploy.clean  = config["clean"]
-  deploy.flags  = config["flags"]
-  deploy.host   = config["host"]
-  deploy.method = :rsync
-  deploy.path   = config["path"]
-  deploy.port   = config["port"]
-  deploy.user   = config["user"]
+  deploy.clean = config["clean"]
+  deploy.flags = config["flags"]
+  deploy.host = config["host"]
+  deploy.deploy_method = :rsync
+  deploy.path = config["path"]
+  deploy.port = config["port"]
+  deploy.user = config["user"]
 end
 
 configure :build do
