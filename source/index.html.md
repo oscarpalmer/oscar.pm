@@ -1,10 +1,29 @@
-Hello. I'm Oscar.
+# Hello, friend
 
-I make computers do [cool stuff](//github.com/oscarpalmer). Mostly stuff for web-related thingamajigs, but also "secret" things.
+My name is Oscar, and this is my comfy little place on the Internet.
 
-Oh, okay, fine&hellip; yes, I am working on a game. It'll be tiny, ugly, and filled with lots of words, and it's super cool. Well, it isn't right now, but it will be! <i>Some day, at least.</i>
+# Oscar, who?
 
-[Say hi](//twitter.com/ohpalmer), or listen to [what I enjoy](//last.fm/user/denkyuu). If you want to [play games](//psnprofiles.com/queo) with me, then that's cool, too.
+Oscar Palm&eacute;r; yes, I've got an acute accent, and a cute accent.
 
-See you later, friend,  
-XOXO
+I'm a 90's kid from Sweden with an interest in all things nerdy, with the exception of chess.
+
+# What I do
+
+Fail my university studies and work (mostly) boring technician jobs? Yeah, that's about it these days.
+
+Jokes aside, I am a self-taught developer with an interest in web and game development, and I'm currently working on a little game.
+
+# Friends
+
+[Harry](//harryharrison.co), [Tim](//tmdvs.me) &amp; [Robbie](//robbiepearce.com), [Collin](//syropia.net), [Jackie](//cargocollective.com/jackiesaik), [Prekesh](//dribbble.com/prekesh) &amp; [Nicole](//dribbble.com/nickles), and [Janik](//kinaj.com). The <i lang="fr">crème de la crème</i>, if you will. <i class="what" title="Oh, feeling left out? Let me know on Twitter :)">?</i>
+
+# Elsewhere
+
+I [tweet](//twitter.com/ohpalmer) -- though I prefer to read tweets -- and [listen to music](//last.fm/user/Denkyuu), make [somewhat useful things](//github.com/oscarpalmer), and [play games](//psnprofiles.com/queo) when I can.
+
+# Goodbye?
+
+Well, that's up to you. You're welcome to [say hi](//twitter.com/ohpalmer) or [beat me in a match](//psnprofiles.com/queo) of Battlefront.
+
+<p><span class="emoji">✌🏼</span></p>
