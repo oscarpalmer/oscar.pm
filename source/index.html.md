@@ -6,13 +6,13 @@ My name is Oscar, and this is my comfy little place on the Internet.
 
 Oscar Palm&eacute;r; yes, I've got an acute accent, and a cute accent.
 
-I'm a 90's kid from Sweden with an interest in all things nerdy, with the exception of chess.
+I'm a 90's kid from Sweden with an interest in all things nerdy, with the exception of chess. No, you know what, chess is kinda cool, too.
 
 # What I do
 
-Fail my university studies and work (mostly) boring technician jobs? Yeah, that's about it these days.
+Study? I guess so. I'm a systems science – "systemvetenskap" in Swedish – student at ["H&ouml;gskolan i Bor&aring;s"](//hb.se).
 
-Jokes aside, I am a self-taught developer with an interest in web and game development, and I'm currently working on a little game.
+And on the side, I would consider myself a self-taught developer with an interest in web and game development, and I'm currently working on a little game, though school is taking up more of my precious time these days.
 
 # Friends
 
