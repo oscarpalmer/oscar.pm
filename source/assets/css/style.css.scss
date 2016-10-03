@@ -7,7 +7,7 @@ body {
   margin: 8%;
   background: #efebe7;
   color: #5f5b57;
-  font-family: franklin-gothic-urw, helvetica neue, helvetica, arial, sans-serif;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
   font-size: 1rem;
   line-height: 1.4;
 }
@@ -46,12 +46,6 @@ p {
 
 .emoji {
   font-size: 4em;
-}
-
-.what {
-  color: #afaba7;
-  font-size: .75em;
-  cursor: help;
 }
 
 @media screen and (max-width: 768px) {
