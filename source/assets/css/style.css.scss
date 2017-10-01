@@ -3,54 +3,55 @@
  */
 
 body {
-  max-width: 24em;
-  margin: 8%;
-  background: #efebe7;
-  color: #5f5b57;
-  font-family: helvetica neue, helvetica, arial, sans-serif;
+  max-width: 28em;
+  padding: 0 8%;
+  margin: 8% auto;
+  box-sizing: content-box;
+  background: rgb(60, 60, 60) url(https://summerset.nyc3.digitaloceanspaces.com/patterns/pink_dust.png);
+  color: #efeae0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .75);
+  font-family: -apple-system, helvetica neue, helvetica, arial, sans-serif;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 a {
-  color: rgb(78, 96, 186);
-  border-bottom: 2px solid rgba(78, 96, 186, .5);
+  color: rgb(255, 155, 200);
   text-decoration: none;
   transition: .2s ease;
-  &:hover {
-    color: rgb(186, 78, 96);
-    border-color: rgba(186, 78, 96, .5);
-  }
-  &:active {
-    color: #9f9b97;
-    border-color: #cfcbc7;
-  }
+
+  &:hover   { color: rgb(200, 255, 155); }
+  &:active  { color: #afaba7; }
 }
 
-h1 {
-  margin: 2.6666666667em 0 1.3333333333em;
-  color: #9f9b97;
+h1,
+h2 {
+  margin: 2rem 0;
+  color: #9f9a90;
   font-size: .75em;
   letter-spacing: .2em;
   line-height: 1;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 i {
-  color: #7f7b77;
+  color: #7fab70;
 }
 
 p {
   margin: 1em 0;
 }
 
-.emoji {
-  font-size: 4em;
+img {
+  width: 48px;
+  padding-top: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 560px) {
   body {
     max-width: 100%;
+    padding: 0;
     margin: 2em;
   }
 }

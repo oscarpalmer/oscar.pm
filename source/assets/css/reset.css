@@ -1,16 +1,17 @@
 /* Reset
-   ========================================
+   ================================
    A stylesheet reset heavily based
-   upon normalize.css. MIT Licensed.
-   ======================================== */
+   upon Normalize.css.
+   ================================ */
+
+/* Base
+   ================================ */
 
 * {
   padding: 0;
   margin: 0;
-  border: 0;
-  outline: 0;
-  list-style: none;
-  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
 }
 
 html {
@@ -24,7 +25,7 @@ body {
 }
 
 /* HTML5
-   ======================================== */
+   ================================ */
 
 article,
 aside,
@@ -37,8 +38,7 @@ hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
@@ -55,24 +55,21 @@ audio:not([controls]) {
   height: 0;
 }
 
+summary {
+  display: list-item;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
 [hidden],
 template {
   display: none;
 }
 
 /* Content
-   ======================================== */
-
-blockquote p::after,
-blockquote p::before,
-li::before,
-q::after,
-q::before {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
+   ================================ */
 
 blockquote p:first-child,
 blockquote p:only-child {
@@ -98,6 +95,16 @@ blockquote p:only-child::before {
   text-align: right;
 }
 
+blockquote q::after,
+q q::after {
+  content: "\2019";
+}
+
+blockquote q::before,
+q q::before {
+  content: "\2018";
+}
+
 dt {
   font-weight: bold;
 }
@@ -112,54 +119,24 @@ img {
   border: 0;
 }
 
-li {
-  position: relative;
-  counter-increment: num;
-}
-
-li::before {
-  width: 4em;
-  display: block;
-  text-align: right;
-  position: absolute;
-  left: -4.5em;
-}
-
-ol,
-ul {
-  counter-reset: num;
-}
-
-ol li::before {
-  content: counter(num, decimal) ".";
-}
-
-ol.code li::before {
-  content: counter(num, decimal-leading-zero) ".";
-}
-
 ol ol,
-ol ul,
 ul ol,
+ol ul,
 ul ul {
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 1.75em;
 }
 
 pre {
   overflow: auto;
-  whitespace: pre-wrap;
+  white-space: pre-wrap;
 }
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-ul li::before {
-  content: "\2022";
-}
-
 /* Text-level
-   ======================================== */
+   ================================ */
 
 a {
   background-color: transparent;
@@ -172,11 +149,8 @@ a:hover {
 
 abbr[title],
 dfn[title] {
+  border-bottom: 1px dotted #555;
   cursor: help;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
 }
 
 b,
@@ -193,20 +167,12 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: small;
 }
 
 mark {
-  background: #ffb;
-  color: #754;
-}
-
-q q::after {
-  content: "\2019";
-}
-
-q q::before {
-  content: "\2018";
+  background: #ffa;
+  color: #643;
 }
 
 small,
@@ -229,7 +195,7 @@ sub {
 }
 
 /* Forms
-   ======================================== */
+   ================================ */
 
 button,
 input,
@@ -241,7 +207,8 @@ textarea {
   margin: 0;
 }
 
-button {
+button,
+input {
   overflow: visible;
 }
 
@@ -251,7 +218,7 @@ select {
 }
 
 button,
-html input[type="button"],
+input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
@@ -264,66 +231,47 @@ html input[disabled] {
 }
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border: none;
 }
 
-input {
-  line-height: normal;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
+input[type=search] {
   box-sizing: content-box;
+  -webkit-appearance: searchfield;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 1em;
+  border: 1px solid #ccc;
 }
 
 legend {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
+  max-width: 100%;
+  display: table;
+  white-space: normal;
 }
 
 optgroup {
   font-weight: bold;
 }
 
-/* Tables
-   ======================================== */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+textarea {
+  overflow: auto;
 }
 
-td,
-th {
-  padding: 0;
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
 }

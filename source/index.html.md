@@ -2,24 +2,22 @@
 
 My name is Oscar, and this is my comfy little place on the Internet.
 
-# Oscar, who?
+## Oscar, who?
 
-Oscar Palm&eacute;r; yes, I've got an acute accent, and a cute accent.
+Oscar Palm&eacute;r; yes, I've got an acute accent, and a cute accent. I'm a 90's kid from Sweden with an interest in all things nerdy.
 
-I'm a 90's kid from Sweden with an interest in all things nerdy, with the exception of chess. No, you know what, chess is kinda cool, too.
+## What I do
 
-# What I do
+Study? I guess so. I'm a systems science student at ["Högskolan i Borås"](//hb.se).
 
-Study? I guess so. I'm a systems science – "systemvetenskap" in Swedish – student at ["H&ouml;gskolan i Bor&aring;s"](//hb.se).
+And on the side, I would consider myself a self-taught developer with an interest in web and game development, though school is taking up most of my precious time these days.
 
-And on the side, I would consider myself a self-taught developer with an interest in web and game development, and I'm currently working on a little game, though school is taking up most of my precious time these days.
+## Elsewhere
 
-# Elsewhere
+I [tweet](//twitter.com/ohpalmer) -- though I prefer to read tweets -- make [somewhat useful things](//github.com/oscarpalmer), and [play games](//psnprofiles.com/queo) when I can.
 
-I [tweet](//twitter.com/ohpalmer) -- though I prefer to read tweets -- and [listen to music](//last.fm/user/Denkyuu), make [somewhat useful things](//github.com/oscarpalmer), and [play games](//psnprofiles.com/queo) when I can.
+## Goodbye?
 
-# Goodbye?
+Well, that's up to you. You're welcome to [say hi](//twitter.com/ohpalmer) or help me [explore space](//psnprofiles.com/queo) in Destiny.
 
-Well, that's up to you. You're welcome to [say hi](//twitter.com/ohpalmer) or [help me explore space](//psnprofiles.com/queo) in Destiny.
-
-<p><span class="emoji">✌🏼</span></p>
+![Live long and prosper!](//summerset.nyc3.digitaloceanspaces.com/emoji/llap.png)

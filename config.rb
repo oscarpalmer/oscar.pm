@@ -1,16 +1,17 @@
-config = YAML::load File.read("config.yml")
+config = YAML::load(File.read("config.yml"))
 
 activate :directory_indexes
 activate :gzip
+activate :sprockets
 
 activate :deploy do |deploy|
-  deploy.clean = config["clean"]
-  deploy.flags = config["flags"]
-  deploy.host = config["host"]
   deploy.deploy_method = :rsync
-  deploy.path = config["path"]
-  deploy.port = config["port"]
-  deploy.user = config["user"]
+
+  deploy.clean = config["clean"]
+  deploy.host  = config["host"]
+  deploy.path  = config["path"]
+  deploy.port  = config["port"]
+  deploy.user  = config["user"]
 end
 
 configure :build do
@@ -22,7 +23,8 @@ end
 page "/assets/error.html", :directory_index => false
 
 set :build_dir, "build"
-set :css_dir, "assets/css"
+set :css_dir,   "assets/css"
+set :js_dir,    "assets/js"
 
 set :markdown_engine, :redcarpet
 set :markdown,
