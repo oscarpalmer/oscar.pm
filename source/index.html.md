@@ -20,4 +20,4 @@ I [tweet](//twitter.com/ohpalmer) -- though I prefer to read tweets -- make [som
 
 Well, that's up to you. You're welcome to [say hi](//twitter.com/ohpalmer) or help me [explore space](//psnprofiles.com/queo) in Destiny.
 
-![Live long and prosper!](//summerset.nyc3.digitaloceanspaces.com/emoji/llap.png)
+![Live long and prosper!](//d2pqc14cgnihq.cloudfront.net/emoji/llap.png)
