@@ -1,8 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "middleman"
-gem "middleman-minify-html"
-gem "middleman-sprockets"
+gem 'middleman'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+gem 'middleman-minify-html'
+gem 'middleman-sprockets'
 
-gem "builder"
-gem "redcarpet"
+gem 'builder'
+gem 'redcarpet'
