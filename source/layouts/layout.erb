@@ -1,24 +1,37 @@
 <%
-  @resource = current_resource.data
+  resource = current_resource.data
 %>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <base href="/" />
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-  <title><% unless @resource.title.nil? %><%= @resource.title %> &ndash; <% end %>Oscar Palm&eacute;r</title>
-  <meta name="description" content="A website for a developer who's a bit all over the place." />
-  <meta name="author" content="Oscar Palm&eacute;r" />
+  <title><% unless resource.title.nil? %><%= resource.title %> &ndash; <% end %>Oscar Palmér</title>
+  <meta name="description" content="A simple website for a developer who's a bit all over the place…" />
+  <meta name="author" content="Oscar Palmér" />
 
   <%= stylesheet_link_tag "style" %>
 </head>
-<body>
-  <main>
-    <%= yield %>
-  </main>
+<body class="<%= page_classes %>">
+  <div class="wrapper">
+    <header role="banner" class="banner">
+      <h1 class="banner-title">Oscar Palmér</h1>
+      <% unless resource.tag.nil? %>
+        <h2 class="banner-subtitle"><%= resource.tag %></h2>
+      <% end %>
+    </header>
+
+    <main role="main" class="main">
+      <%= yield %>
+    </main>
+  </div>
+
+  <footer role="contentinfo" class="footer">
+    <p class="copyright">&copy; 1992–2018, Oscar Palmér</p>
+  </footer>
 </body>
 </html>
