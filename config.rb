@@ -10,14 +10,17 @@ configure :build do
   activate :minify_html
 end
 
-config = YAML.load_file 'config.yml'
-activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.clean = true
+if File.exist? 'config.yml'
+  config = YAML.load_file 'config.yml'
 
-  deploy.host = config['host']
-  deploy.path = config['path']
-  deploy.user = config['user']
+  activate :deploy do |deploy|
+    deploy.deploy_method = :rsync
+    deploy.clean = true
+
+    deploy.host = config['host']
+    deploy.path = config['path']
+    deploy.user = config['user']
+  end
 end
 
 page '/404.html', :directory_index => false

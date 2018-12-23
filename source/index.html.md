@@ -18,4 +18,4 @@ I also [tweet](//twitter.com/ohpalmer) &ndash; though I prefer to read everyone 
 
 Well, that's up to you. You're welcome to [say&nbsp;hi](//twitter.com/ohpalmer) or help me [defeat&nbsp;digital&nbsp;baddies](//psnprofiles.com/queo).
 
-![Live long and prosper!](//cdn.oscar.pm/emoji/llap.png)
+![Live long and prosper!](//d2pqc14cgnihq.cloudfront.net/emoji/llap.png)
