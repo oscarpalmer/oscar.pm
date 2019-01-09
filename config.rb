@@ -1,10 +1,12 @@
 require 'yaml'
 
 activate :directory_indexes
-activate :gzip
 activate :sprockets
 
 configure :build do
+  activate :brotli
+  activate :gzip
+
   activate :asset_hash
   activate :minify_css
   activate :minify_html
