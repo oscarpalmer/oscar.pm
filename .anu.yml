@@ -1,0 +1,10 @@
+
+# Folders for Middleman assets
+folders:
+  fonts: '/assets/fonts'
+  images: '/assets/images'
+  javascripts: '/assets/javascripts'
+  stylesheets: '/assets/stylesheets'
+
+# Base URL for Middleman sitemap
+url: 'https://oscar.pm'
