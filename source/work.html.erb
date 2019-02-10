@@ -1,0 +1,33 @@
+---
+title: Work
+description: Personal projects and other fun things I have worked on.
+---
+
+<header>
+  <h1><%= current_page.data.title %></h1>
+  <h2><%= current_page.data.description.sub /\.\z/, '' %></h2>
+</header>
+
+<section>
+  <header>
+    <h2>A method in madness?</h2>
+  </header>
+
+  <p>As a <i>(mostly webbased)</i> developer, I use a lot of different frameworks and tools in my everyday worklife, but at times I have needed to make things for myself, or pushed myself to develop an alternative to an existing solution as a learning experience.</p>
+  <p>All of my projects are currently hosted on <a href="//github.com/oscarpalmer">GitHub</a> – both publicly and privately – but below are some of the more useful things I have made.</p>
+  <p>You're more than welcome to check them out, or even better, <i>fork</i> and improve them.</p>
+</section>
+
+<section>
+  <header>
+    <h2>Interesting projects</h2>
+  </header>
+  <ul>
+    <% data.work.projects.each do |project| %>
+      <li>
+        <h3><a href="//github.com/oscarpalmer/<%= project.title.downcase %>"><%= project.title %></a></h3>
+        <p><%= project.description %></p>
+      </li>
+    <% end %>
+  </ul>
+</section>

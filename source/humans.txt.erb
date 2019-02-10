@@ -1,0 +1,28 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+## Team
+
+<% data.humans.team.each do |person| %>
+- <%= person.name %>
+  - <%= person.role %>
+  - <%= person.location %>
+  - @<%= person.twitter %>
+<% end %>
+
+## Thanks
+
+<% data.humans.thanks.each do |item| %>
+- <%= item %>
+<% end %>
+
+## Site
+
+<% data.humans.site.each do |item| %>
+### <%= item.title %>
+
+<% item.items.each do |i| %>
+- <%= i.name %><%= ' ' * (12 - i.name.length) %>(<%= i.url %>)
+<% end %>
+
+<% end %>

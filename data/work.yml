@@ -1,0 +1,13 @@
+projects:
+  -
+    title: Quest
+    description: 'A <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> router; similar to <a href="http://sinatrarb.com">Sinatra</a>, but smaller and less competent. Useful for making defining verb-specific routes and actions for them, e.g. displaying a welcoming message on a start page.'
+  -
+    title: Shelf
+    description: An <abbr title="HyperText Transfer Protocol">HTTP</abbr>-abstraction for working with requests and responses in PHP; it's definitely inspired by <a href="https://rack.github.io">Rack</a>, which powers a lot of my Ruby-projects.
+  -
+    title: Knuff
+    description: A simple JavaScript-plugin for working with <i>(some)</i> history events, particularly to intercept internal links and <i>(most likely)</i> loading and displaying the destination's content without a refresh.
+  -
+    title: Skrolla
+    description: Another small JavaScript-plugin; <i>Skrolla</i> will let you scroll smoothly to elements on a page.

@@ -1,0 +1,87 @@
+team:
+  -
+    name: Oscar Palmér
+    role: Designer, developer
+    location: Ulricehamn, Sweden
+    twitter: ohpalmer
+
+thanks:
+  - My friends and family
+  - All the cool people on GitHub, Twitter, and elsewhere
+
+site:
+  -
+    title: Standards
+    items:
+      -
+        name: CSS
+        url: https://www.w3.org/Style/CSS/Overview.en.html
+      -
+        name: HTML
+        url: https://www.w3.org/html/
+      -
+        name: JavaScript
+        url: https://developer.mozilla.org/en-US/docs/Web/javascript
+      -
+        name: SVG
+        url: https://www.w3.org/Graphics/SVG/
+  -
+    title: Accessibility
+    items:
+      -
+        name: Axe
+        url: https://www.deque.com/axe/
+      -
+        name: Tenon
+        url: https://tenon.io
+      -
+        name: WAVE
+        url: https://wave.webaim.org
+  -
+    title: Software
+    items:
+      -
+        name: Anu
+        url: https://github.com/oscarpalmer/anu
+      -
+        name: Atom
+        url: https://atom.io
+      -
+        name: ERB
+        url: https://docs.ruby-lang.org/en/trunk/ERB.html
+      -
+        name: Gulp
+        url: https://gulpjs.com
+      -
+        name: Middleman
+        url: https://middlemanapp.com
+      -
+        name: Node.js
+        url: https://nodejs.org/en
+      -
+        name: Ruby
+        url: https://www.ruby-lang.org/en/
+      -
+        name: Sass
+        url: https://sass-lang.com
+      -
+        name: Tachyons
+        url: https://tachyons.io
+  -
+    title: Platforms
+    items:
+      -
+        name: Adobe Fonts
+        url: https://fonts.adobe.com
+      -
+        name: Cloudflare
+        url: https://www.cloudflare.com
+      -
+        name: GitHub
+        url: https://github.com
+      -
+        name: iwantmyname
+        url: https://iwantmyname.com
+      -
+        name: Netlify
+        url: https://www.netlify.com

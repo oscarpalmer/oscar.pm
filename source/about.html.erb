@@ -1,0 +1,50 @@
+---
+title: About
+description: A little bit about myself.
+subtitle: … without being braggadocious, of course
+caption: A somewhat recent selfie of myself
+---
+
+<header>
+  <h1><%= current_page.data.title %></h1>
+  <h2><%= current_page.data.description.sub /\.\z/, '' %><%= current_page.data.subtitle %></h2>
+</header>
+
+<section>
+  <header>
+    <h2>A quick bio</h2>
+  </header>
+
+  <figure>
+    <%= image_tag 'selfie.jpg', alt: current_page.data.caption %>
+    <figcaption><%= current_page.data.caption %></figcaption>
+  </figure>
+
+  <p>Hi, I'm Oscar <i>(Palmér)</i> and this is my little home on the internet.</p>
+  <p>I was born in southern Sweden in the early 90's, and I have been interested in most things technological since a very young age.</p>
+  <p>Because of this interest, I have also become a big fan of both video games and the web as mediums for entertainment, education, and any kind of aid.</p>
+  <p>I'm currently a <i>BSc</i>-student at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan i Borås</a>, where my focus has been on the complete development process, as well as on <abbr title="Human-computer interaction">HCI</abbr> and accessibility.</p>
+</section>
+
+<section>
+  <header>
+    <h2>A couple of favourites</h2>
+  </header>
+
+  <p>When I'm not tinkering with computer-related stuff, I'm most likely letting my brain take a little break, or possibly making it work overtime by thinking about other things.</p>
+  <p>There's always music in my ears when I'm working; I try to read books <i>(and comics)</i> whenever I can; video games have been a big part of my life since I was a little kid; and I do like to watch <i>&ldquo;TV&rdquo;</i>, as well.</p>
+  <p>And so this is just a small <i>(tiny!)</i> selection of some of my favourites.</p>
+
+  <ul>
+    <% data.media.favourites.each do |fav| %>
+      <li>
+        <h3><%= fav.title.capitalize %></h3>
+        <ul>
+          <% fav.items.each do |item| %>
+            <%= "<li><cite><a href=\"#{item.url}\">#{item.title}</a></cite></li>" %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+</section>

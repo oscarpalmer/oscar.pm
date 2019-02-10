@@ -1,7 +1,30 @@
+<%
+  page = current_resource
+
+  author = data.site.meta.author
+
+  title = page.data.title.nil? ? author : "#{page.data.title} &middot; #{author}"
+
+  description = page.data.description || data.site.meta.description
+
+  base_url = config[:anu]['url']
+  page_url = page.url
+       url = "#{base_url}#{page_url}"
+%>
+
 <base href="/">
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-<title>Anu</title>
+<title><%= title %></title>
+<meta name="author" content="<%= author %>">
+<meta name="description" content="<%= description %>">
+
+<meta name="og:title" content="<%= title %>">
+<meta name="og:description" content="<%= description %>">
+<meta name="og:url" content="<%= url %>">
+
+<link rel="author" href="humans.txt">
+<%= favicon_tag 'favicon.png' %>

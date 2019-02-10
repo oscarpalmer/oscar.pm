@@ -1,0 +1,95 @@
+currently:
+  -
+    title: Reading
+    subtitle: Haruki Murakami
+    description: Everything I can get my hands on; I read <cite><a href="http://www.harukimurakami.com/book/kafka-on-the-shore">Kafka on the Shore</a></cite> many years ago, and recently re-discovered this picturesque and bizarre author.
+    url: http://www.harukimurakami.com
+    cite: false
+  -
+    title: Playing
+    subtitle: The Elder Scrolls Online
+    description: An ever-expanding <abbr title="Massively multiplayer online role-playing game">MMORPG</abbr> set in my favourite fantasy universe… and there's so much to do!
+    url: https://www.elderscrollsonline.com/en-gb/home
+    cite: true
+  -
+    title: Listening to
+    subtitle: Mesarthim
+    description: Australian, atmospheric black metal, inspired by space; perfect for both work and relaxation.
+    url: https://mesarthim.bandcamp.com
+    cite: false
+  -
+    title: Watching
+    subtitle: Critial Role
+    description: <abbr title="Dungeons & Dragons">D&D</abbr> with some of my favourite voice actors? Oh, I love it so much.
+    url: https://www.youtube.com/channel/UCpXBGqwsBkpvcYjsJBQ7LEQ
+    cite: false
+
+favourites:
+  -
+    title: Albums
+    items:
+      -
+        title: Gingerol
+        artist: A Crowd of Rebellion
+        url: https://geo.itunes.apple.com/gb/album/gingerol/1250957490
+      -
+        title: Plans
+        artist: Death Cab for Cutie
+        url: https://geo.itunes.apple.com/gb/album/plans-deluxe/966377290
+      -
+        title: Fleet Foxes
+        artist: Fleet Foxes
+        url: https://geo.itunes.apple.com/gb/album/fleet-foxes/1211881401
+      -
+        title: Kei Nishikori Meets Nujabes
+        artist: Nujabes
+        url: https://geo.itunes.apple.com/gb/album/kei-nishikori-meets-nujabes/1078923064
+  -
+    title: Books
+    items:
+      -
+        title: The Hobbit
+        author: J.R.R. Tolkien
+        url: https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again
+      -
+        title: Kallocain
+        author: Karin Boye
+        url: https://www.goodreads.com/book/show/65714.Kallocain
+      -
+        title: Siddhartha
+        author: Hermann Hesse
+        url: https://www.goodreads.com/book/show/42639871-siddharta
+      -
+        title: Slaughterhouse-Five
+        author: Kurt Vonnegut
+        url: https://www.goodreads.com/book/show/4981.Slaughterhouse_Five
+  -
+    title: Games
+    items:
+      -
+        title: Dragon Age II
+        url: https://www.ea.com/games/dragon-age/dragon-age-2
+      -
+        title: 'Fallout: New Vegas'
+        url: https://fallout.bethesda.net/games/fallout-new-vegas
+      -
+        title: 'Metal Gear Solid 3: Snake Eater'
+        url: https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater
+      -
+        title: 'The Witcher 3: Wild Hunt'
+        url: https://thewitcher.com/en/witcher3
+  -
+    title: Shows
+    items:
+      -
+        title: Band of Brothers
+        url: https://www.imdb.com/title/tt0185906/
+      -
+        title: Critical Role
+        url: https://critrole.com
+      -
+        title: Parks and Recreation
+        url: https://www.imdb.com/title/tt1266020/
+      -
+        title: Riverdale
+        url: https://www.imdb.com/title/tt5420376/

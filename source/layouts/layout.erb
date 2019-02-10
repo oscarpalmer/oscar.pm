@@ -4,15 +4,26 @@
   <%= partial "partials/head" %>
 </head>
 <body>
-  <a aria-hidden="true" href="#content">Skip to content</a>
+  <a class="hidden" href="#content">Skip to content</a>
 
-  <header role="banner">
-    <h2>Anu</h2>
-  </header>
+  <div>
+    <header role="banner">
+      <div>
+        <h2><a href="."><%= data.site.meta.author %></a></h2>
+        <nav role="navigation">
+          <ul>
+            <% data.site.pages.each do |page| %>
+            <li><%= current_link_to page.title, page.url %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main role="main" id="content">
-    <%= yield %>
-  </main>
+    <main role="main" id="content">
+      <%= yield %>
+    </main>
+  </div>
 
   <%= partial "partials/footer" %>
 </body>

@@ -1,0 +1,17 @@
+meta:
+  author: Oscar Palmér
+  description: The webbased home of Oscar Palmér, a web designer and developer from southern Sweden.
+
+pages:
+  -
+    title: Home
+    url: /
+  -
+    title: Work
+    url: /work/
+  -
+    title: About
+    url: /about/
+  -
+    title: Contact
+    url: /contact/

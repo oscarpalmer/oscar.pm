@@ -1,1 +1,33 @@
-<h1>Hello, world!</h1>
+<header>
+  <h1><%= data.site.meta.author %> is a designer and developer, with an interest in accessibility and usability, trying to make the web a better place for everyone</h1>
+  <h2>He also dislikes talking about himself in third person, and spends too much time thinking about fictional characters</h2>
+</header>
+
+<section>
+  <header class="hidden">
+    <h2>An introduction</h2>
+  </header>
+
+  <p>Yup, that's me &ndash; <a href="about">I'm Oscar</a>! I've been tinkering with the web for more than a decade now, and I love it more than ever; it's really what pushed me towards bettering myself in all aspects of design and development, and I'm currently working towards attaining a <i>BSc</i> at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan i Borås</a>.</p>
+  <p>Right now, I'm primarily researching for and writing on my final thesis, which I will be working on with a friend until the beginning of summer.</p>
+</section>
+
+<section>
+  <header>
+    <h2>Right now, I'm currently<sup><a href="#note">&ast;</a></sup>&hellip;</h2>
+  </header>
+
+  <ul>
+    <% data.media.currently.each do |media|
+         subtitle = "<a href=\"#{media.url}\">#{media.subtitle}</a>"
+         subtitle = "<cite>#{subtitle}</cite>" if media.cite
+    %>
+      <li>
+        <h3><%= media.title %> <%= subtitle %></h3>
+        <p><%= media.description %></p>
+      </li>
+    <% end %>
+  </ul>
+
+  <p id="note">Well, I hope I am&hellip; and if I'm not, I probably did within the last day or so.</p>
+</section>
