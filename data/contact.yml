@@ -4,9 +4,9 @@ links:
     url: mailto_opalmer@me.com
     tag: email
   -
-    title: Phone
-    url: tel_+46705692546
-    tag: phone
+    title: GitHub
+    url: https://github.com/oscarpalmer
+    tag: github
   -
     title: LinkedIn
     url: https://www.linkedin.com/in/oscar-palmer
@@ -15,7 +15,3 @@ links:
     title: Twitter
     url: https://twitter.com/ohpalmer
     tag: twitter
-  -
-    title: GitHub
-    url: https://github.com/oscarpalmer
-    tag: github

@@ -32,11 +32,11 @@ site:
         name: Axe
         url: https://www.deque.com/axe/
       -
-        name: Tenon
-        url: https://tenon.io
-      -
         name: WAVE
         url: https://wave.webaim.org
+      -
+        name: web.dev (Google)
+        url: https://web.dev
   -
     title: Software
     items:
