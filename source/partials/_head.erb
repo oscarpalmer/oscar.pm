@@ -22,9 +22,20 @@
 <meta name="author" content="<%= author %>">
 <meta name="description" content="<%= description %>">
 
-<meta name="og:title" content="<%= title %>">
-<meta name="og:description" content="<%= description %>">
-<meta name="og:url" content="<%= url %>">
+<meta property="og:description" content="<%= description %>">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="<%= url %>">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="<%= description %>">
+<meta name="twitter:site" content="@ohpalmer">
+<meta name="twitter:title" content="<%= title %>">
+
+<meta property="og:image" content="https://d2pqc14cgnihq.cloudfront.net/oscar-pm/social-1553537253.png">
+<meta name="twitter:image" content="https://d2pqc14cgnihq.cloudfront.net/oscar-pm/social-1553537253.png">
 
 <link rel="author" href="humans.txt">
 <%= favicon_tag 'favicon.png' %>
+<%= stylesheet_link_tag :site %>
+<link rel="stylesheet" href="https://use.typekit.net/bic5dhm.css">

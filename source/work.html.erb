@@ -3,30 +3,35 @@ title: Work
 description: Personal projects and other fun things I have worked on.
 ---
 
-<header>
-  <h1><%= current_page.data.title %></h1>
-  <h2><%= current_page.data.description.sub /\.\z/, '' %></h2>
+<header class="bg-color header pa3 pa4-m pa5-l lh-title" aria-labelledby="page-title">
+  <div class="mw7 center">
+    <h1 id="page-title" class="f5 f4-ns"><%= current_page.data.title %></h1>
+    <p class="pt2 pt3-ns f3 f2-ns normal i"><%= current_page.data.description.sub /\.\z/, '' %></p>
+  </div>
 </header>
 
-<section>
-  <header>
-    <h2>A method in madness?</h2>
+<section id="content" class="pt3 pt4-m pt5-l mh3 mb3 mh4-m mb4-m mh5-l mb5-l" aria-labelledby="intro-title">
+  <header class="hidden" aria-labelledby="intro-title">
+    <h2 id="intro-title">A method in madness?</h2>
   </header>
 
-  <p>As a <i>(mostly webbased)</i> developer, I use a lot of different frameworks and tools in my everyday worklife, but at times I have needed to make things for myself, or pushed myself to develop an alternative to an existing solution as a learning experience.</p>
-  <p>All of my projects are currently hosted on <a href="//github.com/oscarpalmer">GitHub</a> – both publicly and privately – but below are some of the more useful things I have made.</p>
-  <p>You're more than welcome to check them out, or even better, <i>fork</i> and improve them.</p>
+  <div class="mw7 center">
+    <p class="measure">As a <i>(mostly webbased)</i> developer, I use a lot of different frameworks and tools in my everyday worklife, but at times I have needed to make things for myself, or pushed myself to develop an alternative to an existing solution as a learning experience.</p>
+    <p class="measure mv3">All of my projects are currently hosted on <a href="//github.com/oscarpalmer">GitHub</a> &ndash; both publicly and privately <span class="emoji" role="img" aria-label="Winking face" tabindex="0">&#x1F609</span> &ndash; but below are some of the more useful things I have made.</p>
+    <p class="measure">You're more than welcome to check them out, or even better, <i>fork</i> and improve them.</p>
+  </div>
 </section>
 
-<section>
-  <header>
-    <h2>Interesting projects</h2>
+<section class="ma3 mb0 ma4-m ma5-l" aria-labelledby="projects-title">
+  <header class="mw7 center mb3 mb4-m mb5-l" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="f4 f3-ns lh-solid">Interesting projects</h2>
   </header>
-  <ul>
+
+  <ul class="items list mw8 pl0 center cf">
     <% data.work.projects.each do |project| %>
-      <li>
-        <h3><a href="//github.com/oscarpalmer/<%= project.title.downcase %>"><%= project.title %></a></h3>
-        <p><%= project.description %></p>
+      <li class="items__item mt3 mt0-ns fl-ns">
+        <h3 class="mb2 mb3-m mb4-l f5 f4-ns lh-solid"><a href="//github.com/oscarpalmer/<%= project.title.downcase %>"><%= project.title %></a></h3>
+        <p class="pl3 pl0-ns"><%= project.description %></p>
       </li>
     <% end %>
   </ul>

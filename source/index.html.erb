@@ -1,33 +1,40 @@
-<header>
-  <h1><%= data.site.meta.author %> is a designer and developer, with an interest in accessibility and usability, trying to make the web a better place for everyone</h1>
-  <h2>He also dislikes talking about himself in third person, and spends too much time thinking about fictional characters</h2>
+<header class="bg-color hero pa3 pa4-m pa5-l lh-title" aria-labelledby="page-title">
+  <div class="hero__content">
+    <h1 id="page-title" class="f5 f4-m f3-l normal-ns"><%= data.site.meta.author %> is a designer & developer</h1>
+    <p class="pt3 pt4-ns f3 f2-m f1-l normal i">With an interest in accessibility and usability, he's trying to make the web a better place for everyone; he also dislikes talking about himself in third person, and spends too much time thinking about fictional characters</p>
+    <p><a class="jump" href="#content">Jump to introduction</a></p>
+  </div>
 </header>
 
-<section>
-  <header class="hidden">
-    <h2>An introduction</h2>
-  </header>
+<div id="content">
+  <section class="pt3 pt4-m pt5-l mh3 mb3 mh4-m mb4-m mh5-l mb5-l" aria-labelledby="intro-title">
+    <header class="hidden" aria-labelledby="intro-title">
+      <h2 id="intro-title">An introduction</h2>
+    </header>
 
-  <p>Yup, that's me &ndash; <a href="about">I'm Oscar</a>! I've been tinkering with the web for more than a decade now, and I love it more than ever; it's really what pushed me towards bettering myself in all aspects of design and development, and I'm currently working towards attaining a <i>BSc</i> at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan i Borås</a>.</p>
-  <p>Right now, I'm primarily researching for and writing on my final thesis, which I will be working on with a friend until the beginning of summer.</p>
-</section>
+    <div class="mw7 center">
+      <p class="mb3 measure">Yup, that's me &ndash; <a href="about">I'm Oscar</a>! I've been tinkering with the web for more than a decade now, and I love it more than ever; it's really what pushed me towards bettering myself in all aspects of design and development, and I'm currently working towards attaining a <i>BSc in informatics</i> at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan i Borås</a>.</p>
+      <p class="measure">Right now, I'm primarily researching for and writing on my final essay &ndash; an exploration of accessibility in relation to websites for institutions of higher education in Sweden &ndash; which I will be working on with a friend until the beginning of summer.</p>
+    </div>
+  </section>
 
-<section>
-  <header>
-    <h2>Right now, I'm currently<sup><a href="#note">&ast;</a></sup>&hellip;</h2>
-  </header>
+  <section class="ma3 ma4-m ma5-l" aria-labelledby="items-title">
+    <header class="mw7 center mb3 mb4-m mb5-l" aria-labelledby="items-title">
+      <h2 id="items-title" class="f4 f3-ns lh-solid">I'm currently<sup class="sup"><a href="#note">&ast;</a></sup>&hellip;</h2>
+    </header>
 
-  <ul>
-    <% data.media.currently.each do |media|
-         subtitle = "<a href=\"#{media.url}\">#{media.subtitle}</a>"
-         subtitle = "<cite>#{subtitle}</cite>" if media.cite
-    %>
-      <li>
-        <h3><%= media.title %> <%= subtitle %></h3>
-        <p><%= media.description %></p>
-      </li>
-    <% end %>
-  </ul>
+    <ul class="items list mw8 pl0 center cf">
+      <% data.media.currently.each do |media|
+           subtitle = "<a href=\"#{media.url}\">#{media.subtitle}</a>"
+           subtitle = "<cite>#{subtitle}</cite>" if media.cite
+      %>
+        <li class="items__item mb3 mb0-ns fl-ns">
+          <h3 class="items__title mb2 mb3-ns f5 f4-ns lh-solid"><span class="emoji" role="img" aria-label="<%= media.title %>" tabindex="0"><%= media.emoji %></span> <%= subtitle %></h3>
+          <p class="pl3 pl0-ns"><%= media.description %></p>
+        </li>
+      <% end %>
+    </ul>
 
-  <p id="note">Well, I hope I am&hellip; and if I'm not, I probably did within the last day or so.</p>
-</section>
+    <p id="note" class="mw7 center mt0 mb3 mv4-m mv5-l f6 f5-ns i">Well, I hope I'm doing any of those things&hellip; and if I'm not, I probably did within the last day or so.</p>
+  </section>
+</div>

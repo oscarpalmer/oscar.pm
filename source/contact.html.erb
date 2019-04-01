@@ -3,40 +3,47 @@ title: Contact
 description: How to get in touch with me, if you'd like.
 ---
 
-<header>
-  <h1><%= current_page.data.title %></h1>
-  <h2><%= current_page.data.description.sub /\.\z/, '' %></h2>
+<header class="bg-color header pa3 pa4-m pa5-l lh-title" aria-labelledby="page-title">
+  <div class="mw7 center">
+    <h1 id="page-title" class="f5 f4-ns"><%= current_page.data.title %></h1>
+    <p class="pt2 pt3-ns f3 f2-ns normal i"><%= current_page.data.description.sub /\.\z/, '' %></p>
+  </div>
 </header>
 
-<section>
-  <header>
-    <h2>Questions, ideas, or recommendations?</h2>
-  </header>
+<div id="content">
+  <section class="pt3 pt4-m pt5-l mh3 mb3 mh4-m mb4-m mh5-l mb5-l" aria-labelledby="intro-title">
+    <header class="hidden" aria-labelledby="intro-title">
+      <h2 id="intro-title">Questions, ideas, or recommendations?</h2>
+    </header>
 
-  <p>Whatever it is, I'd love to hear from you.</p>
-  <p>Using any of the traditional methods or social networks below to get ahold of me is probably the fastest and most reliable way of doing so.</p>
-  <p>Though, I should mention, I probably won't answer if you call just out of the blue&hellip;</p>
-</section>
+    <div class="mw7 center">
+      <p class="measure mb3">Whatever is on your mind, I'd love to hear from you. <span class="emoji" role="img" aria-label="Smiling face" tabindex="0">&#x1F60A;</span></p>
+      <p class="measure">Using any of the traditional methods or social networks below to get ahold of me is probably the fastest and most reliable way of doing so.</p>
+    </div>
+  </section>
 
-<section>
-  <header>
-    <h2>Where to find me</h2>
-  </header>
+  <section class="ma3 ma4-m ma5-l" aria-labelledby="links-title">
+    <header class="mw7 center mb3 mb4-m mb5-l" aria-labelledby="links-title">
+      <h2 id="links-title" class="f4 f3-ns lh-title">Where to find me</h2>
+    </header>
 
-  <ul>
-    <% data.contact.links.each do |link|
-         href = "href=\"#{link.url}\""
-         href = "data-#{href}" if %w(email phone).include? link.tag
-    %>
-      <%= "<li><a class=\"#{link.tag}\" #{href}>#{link.title}</a></li>" %>
-    <% end %>
-  </ul>
-</section>
+    <ul class="ul mw7 center">
+      <% data.contact.links.each do |link|
+           href = "href=\"#{link.url}\""
+           href = "data-#{href}" if %w(email).include? link.tag
+      %>
+        <%= "<li><a class=\"#{link.tag}\" #{href}>#{link.title}</a></li>" %>
+      <% end %>
+    </ul>
+  </section>
+</div>
 
 <script>document.addEventListener('DOMContentLoaded', function () {
   Array.prototype.forEach.call(
-    document.querySelectorAll('.email,.phone'),
+    document.querySelectorAll('.email'),
     function (link) {
       link.href = link.getAttribute('data-href').replace('_', ':')
-      link.removeAttribute('data-href')})
+      link.removeAttribute('data-href')
+    }
+  )
 })</script>
