@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Ruby version
-ruby '2.4.3'
+ruby '2.6.3'
 
 # Middleman gems
 gem 'middleman'
