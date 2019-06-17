@@ -13,14 +13,14 @@
     </header>
 
     <div class="mw7 center">
-      <p class="measure mb3">Yup, that's me &ndash; <a href="about">I'm Oscar</a>! I've been tinkering with the web for more than a decade now, and I love it more than ever; it's really what pushed me towards bettering myself in all aspects of design and development, and I'm currently working towards attaining a <i>BSc in informatics</i> at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan i Borås</a>.</p>
+      <p class="measure mb3">Yup, that's me &ndash; <a href="about">I'm Oscar</a>! I've been tinkering with the web for more than a decade now, and I love it more than ever. It's really what pushed me towards bettering myself in all aspects of design and development, and because of this, between 2016 and 2019, I was an informatics student at <a href="//www.hb.se" hreflang="sv" lang="sv">Högskolan&nbsp;i&nbsp;Borås</a>.</p>
       <p class="measure mb3">In the months leading up to the summer of 2019, I was primarily researching for and writing on my final thesis together with a friend. The thesis can be described as an exploration and evaluation of accessibility in relation to websites for institutions of higher education in Sweden</p>
-      <p class="measure">This August, however, I will be joining <a href="https://www.botek.se">Botek</a> as a systems developer and will hopefully be involved in many different parts of their software development processes &ndash; yay! <span class="emoji" role="img" aria-label="Smiling face" tabindex="0">&#x1f604;</span></p>
+      <p class="measure">This August, however, I will be joining <a href="https://www.botek.se">Botek</a> as a systems developer and will hopefully be involved in many different parts of their software development processes &ndash; yay! <span class="emoji__aria" role="img" aria-label="Smiling face" tabindex="0">&#x1f604;</span></p>
     </div>
   </section>
 
   <section class="ma3 ma4-m ma5-l" aria-labelledby="items-title">
-    <header class="mw7 center mb3 mb4-m mb5-l" aria-labelledby="items-title">
+    <header class="mw7 center mb3 mb4-ns" aria-labelledby="items-title">
       <h2 id="items-title" class="f4 f3-ns lh-solid">I'm currently<sup class="sup"><a href="#note">&ast;</a></sup>&hellip;</h2>
     </header>
 
@@ -30,8 +30,8 @@
            subtitle = "<cite>#{subtitle}</cite>" if media.cite
       %>
         <li class="items__item mb3 mb0-ns fl-ns">
-          <h3 class="items__title mb2 mb3-ns f5 f4-ns lh-solid"><span class="emoji" role="img" aria-label="<%= media.title %>" tabindex="0"><%= media.emoji %></span> <%= subtitle %></h3>
-          <p class="pl3 pl0-ns"><%= media.description %></p>
+          <h3 class="items__title mb2 mb3-ns f5 f4-ns lh-solid"><span class="emoji" role="img"><%= media.emoji %></span> <%= subtitle %></h3>
+          <p class="pl4 pl0-ns"><%= media.description %></p>
         </li>
       <% end %>
     </ul>

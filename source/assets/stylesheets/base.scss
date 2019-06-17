@@ -18,7 +18,7 @@ $color-yellow: mix(white, mix(brown, yellow, 25), 75);
 \* ======================== */
 
 html {
-  font-size: 100%;
+  font-size: 18px;
 }
 
 body {
@@ -159,15 +159,20 @@ time {
 /* Elements */
 
 .emoji {
-  width: 1.5em;
-  height: 1.5em;
-  margin-bottom: -.25em;
-  display: inline-block;
-  position: relative;
-  line-height: 1.5;
-  text-align: center;
-  top: .125em;
+  &,
+  &__aria {
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: -.25em;
+    display: inline-block;
+    position: relative;
+    line-height: 1.5;
+    text-align: center;
+    top: .125em;
+  }
+}
 
+.emoji__aria {
   &:hover,
   &:focus {
     &::after {
@@ -389,6 +394,56 @@ time {
 
 figcaption {
   color: $color-light;
+}
+
+.links {
+  margin-bottom: -1em;
+
+  &__item {
+    width: calc(50% - .5em);
+    height: 3em;
+    margin: 0 1em 1em 0;
+    line-height: 3;
+    float: left;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    a {
+      padding-left: 3.25em;
+      display: block;
+      background-color: rgba($color-blue, .125);
+      border-radius: .25em;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: .125em;
+        left: 1em;
+      }
+
+      &.email::before { content: '\1F4EE'; }
+      &.github::before { content: '\1F6E0'; }
+      &.instagram::before { content: '\1F4F7'; }
+      &.linkedin::before { content: '\1F4BC'; }
+      &.playstation::before { content: '\1F3AE'; }
+      &.twitter::before { content: '\1F425'; }
+
+      &:visited {
+        background-color: rgba($color-purple, .125);
+      }
+
+      &:focus,
+      &:hover {
+        background-color: rgba($color-green, .125);
+      }
+
+      &:active {
+        background-color: rgba($color-grey, .125);
+      }
+    }
+  }
 }
 
 .ul {

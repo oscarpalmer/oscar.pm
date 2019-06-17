@@ -3,20 +3,20 @@
   "version": null,
   "private": true,
   "devDependencies": {
-    "@babel/core": "^7.2.x",
-    "@babel/preset-env": "^7.2.x",
-    "del": "^3.0.x",
+    "@babel/core": "^7.4.x",
+    "@babel/preset-env": "^7.4.x",
+    "del": "^4.1.x",
     "gulp": "^4.0.x",
     "gulp-babel": "^8.0.x",
     "gulp-gzip": "^1.4.x",
     "gulp-if": "^2.0.x",
-    "gulp-imagemin": "^5.0.x",
-    "gulp-purgecss": "^1.1.x",
+    "gulp-imagemin": "^6.0.x",
+    "gulp-purgecss": "^1.2.x",
     "gulp-sass": "^4.0.x",
     "gulp-sizereport": "^1.2.x",
     "gulp-uglify": "^3.0.x",
-    "js-yaml": "^3.12.x",
+    "js-yaml": "^3.13.x",
     "pump": "^3.0.x",
-    "yargs": "^12.0.x"
+    "yargs": "^13.2.x"
   }
 }

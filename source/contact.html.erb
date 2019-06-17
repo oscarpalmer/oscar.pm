@@ -17,22 +17,22 @@ description: How to get in touch with me, if you'd like.
     </header>
 
     <div class="mw7 center">
-      <p class="measure mb3">Whatever is on your mind, I'd love to hear from you. <span class="emoji" role="img" aria-label="Smiling face" tabindex="0">&#x1F60A;</span></p>
+      <p class="measure mb3">Whatever is on your mind, I'd love to hear from you. <span class="emoji__aria" role="img" aria-label="Smiling face" tabindex="0">&#x1F60A;</span></p>
       <p class="measure">Using any of the traditional methods or social networks below to get ahold of me is probably the fastest and most reliable way of doing so.</p>
     </div>
   </section>
 
   <section class="ma3 ma4-m ma5-l" aria-labelledby="links-title">
-    <header class="mw7 center mb3 mb4-m mb5-l" aria-labelledby="links-title">
+    <header class="mw7 center mb3 mb4-ns" aria-labelledby="links-title">
       <h2 id="links-title" class="f4 f3-ns lh-title">Where to find me</h2>
     </header>
 
-    <ul class="ul mw7 center">
+    <ul class="links list pl0 mw7 center cf">
       <% data.contact.links.each do |link|
            href = "href=\"#{link.url}\""
            href = "data-#{href}" if %w(email).include? link.tag
       %>
-        <%= "<li><a class=\"#{link.tag}\" #{href}>#{link.title}</a></li>" %>
+        <%= "<li class=\"links__item\"><a class=\"#{link.tag}\" #{href}>#{link.title}</a></li>" %>
       <% end %>
     </ul>
   </section>

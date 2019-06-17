@@ -4,9 +4,8 @@
   <%= partial "partials/head" %>
 </head>
 <body class="page__<%= page_classes %>" aria-labelledby="page-title">
-  <a class="hidden pv2 ph3 bg-white bn" href="<%= current_resource.url %>#content">Skip to content</a>
-
   <header role="banner" class="banner pa3 pa4-ns lh-solid" aria-labelledby="banner-title">
+    <a class="hidden pv2 ph3 bg-white bn" href="<%= current_resource.url %>#content">Skip to content</a>
     <div class="mw7 center cf">
       <h2 id="banner-title" class="mb2 mb0-ns f5 fl-ns"><a href="/"><%= data.site.meta.author %></a></h2>
       <nav role="navigation" class="fl fr-ns">

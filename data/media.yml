@@ -1,6 +1,6 @@
 currently:
   -
-    emoji: '&#x1F4D6;'
+    emoji: '&#x1F4DA;'
     title: Reading
     subtitle: Haruki Murakami
     description: I read <cite><a href="http://www.harukimurakami.com/book/kafka-on-the-shore">Kafka on the Shore</a></cite> many years ago, and recently re-discovered this picturesque and bizarre author.
@@ -15,7 +15,7 @@ currently:
     cite: true
   -
     emoji: '&#x1F3B5;'
-    title: Listening to
+    title: Listening
     subtitle: Mesarthim
     description: Australian, atmospheric black metal, inspired by space; perfect for both work and relaxation.
     url: https://mesarthim.bandcamp.com
@@ -30,6 +30,8 @@ currently:
 
 favourites:
   -
+    description: Music
+    emoji: '&#x1F3B5;'
     title: Albums
     items:
       -
@@ -49,6 +51,8 @@ favourites:
         creator: Nujabes
         url: https://geo.itunes.apple.com/gb/album/kei-nishikori-meets-nujabes/1078923064
   -
+    description: Literature
+    emoji: '&#x1F4DA;'
     title: Books &amp; comics
     items:
       -
@@ -68,6 +72,8 @@ favourites:
         creator: J. R. R. Tolkien
         url: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings
   -
+    description: Video games
+    emoji: '&#x1F3AE;'
     title: Games
     items:
       -
@@ -87,6 +93,8 @@ favourites:
         creator: CD Projekt Red
         url: https://thewitcher.com/en/witcher3
   -
+    description: TV shows
+    emoji: '&#x1F4FA;'
     title: Shows
     items:
       -
