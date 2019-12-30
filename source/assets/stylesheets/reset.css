@@ -1,0 +1,291 @@
+/*
+ * A simple reset for modern web sites.
+ *
+ * Based on:
+ * - a11y-css-reset
+ * - cssremedy
+ * - minireset.css
+ * - normalize.css.
+ * - sanitize.css
+ * - hankchizljaw.com/wrote/a-modern-css-reset/
+ *
+ * Oscar Palmér, oscar.pm
+ * ================================================ */
+
+/* Basics
+ * ================================================ */
+
+ * {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* HTML5
+ * ================================================ */
+
+canvas,
+progress {
+  display: inline-block;
+}
+
+details,
+main {
+  display: block;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Accessibility
+ * ================================================ */
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.visually-hidden:focus {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: auto;
+  clip: auto;
+  clip-path: none;
+}
+
+/* Grouping content
+ * ================================================ */
+
+audio,
+embed,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+blockquote {
+  quotes: none;
+}
+
+hr {
+  height: 0;
+  box-sizing: content-box;
+  overflow: visible;
+  border: .125rem solid;
+}
+
+img {
+  display: block;
+  border-style: none;
+}
+
+nav ul,
+ol[class],
+ul[class] {
+  list-style: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"/%3E');
+}
+
+nav ul:not([class]) {
+  padding-left: 0;
+}
+
+ol:not([class]),
+ul:not([class]) {
+  padding-left: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* Text-level content
+ * ================================================ */
+
+a,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+}
+
+b,
+dt,
+strong {
+  font-weight: bolder;
+}
+
+dfn,
+q,
+time {
+  font-style: italic;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: smaller;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+kbd,
+td,
+th {
+  border: .125rem solid;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+q {
+  quotes: '\201C' '\201D';
+}
+
+q q {
+  quotes: '\2018' '\2019';
+}
+
+sub,
+sup {
+  font-size: smaller;
+  line-height: 1;
+  position: relative;
+}
+
+sub {
+  vertical-align: text-bottom;
+  top: .125em;
+}
+
+sup {
+  vertical-align: text-top;
+  top: -.125em;
+}
+
+/* Forms
+ * ================================================ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/* Tables
+\* ================================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove animations and transition if requested
+\* ================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
