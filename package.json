@@ -1,6 +1,6 @@
 {
   "name": "oscar.pm",
-  "version": "2020.06.30",
+  "version": "2021.01.01",
   "private": true,
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"

@@ -4,8 +4,7 @@
  * Based on:
  * - a11y-css-reset
  * - cssremedy
- * - minireset.css
- * - normalize.css.
+ * - normalize.css
  * - sanitize.css
  * - hankchizljaw.com/wrote/a-modern-css-reset/
  *
@@ -32,12 +31,10 @@ html {
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  word-break: break-word;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  min-height: 100vh;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
@@ -142,20 +139,16 @@ pre {
   white-space: pre-wrap;
 }
 
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
 /* Text-level content
  * ================================================ */
-
-a,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
 
 a {
   background-color: transparent;
@@ -179,10 +172,11 @@ strong {
   font-weight: bolder;
 }
 
-dfn,
-q,
-time {
-  font-style: italic;
+caption,
+figcaption,
+label,
+legend {
+  line-height: 1.375;
 }
 
 code,
@@ -190,7 +184,13 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: smaller;
+  font-size: 1em;
+}
+
+dfn,
+q,
+time {
+  font-style: italic;
 }
 
 h1,
@@ -199,12 +199,16 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
+  line-height: 1.25;
 }
 
-h1 {
-  font-size: 2em;
-}
+/* Based on exisiting browser values – cssremedy */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.00rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
 
 kbd,
 td,
@@ -282,10 +286,13 @@ table {
 \* ================================================ */
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
+  *, ::before, ::after {
+    animation-delay: -.01ms !important;
+    animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    background-attachment: initial !important;
     scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
   }
 }
